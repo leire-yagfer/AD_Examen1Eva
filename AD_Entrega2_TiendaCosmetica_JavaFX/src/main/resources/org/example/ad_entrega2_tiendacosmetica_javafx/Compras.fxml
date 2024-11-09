@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="498.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ad_entrega2_tiendacosmetica_javafx.Controller.ComprasController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/cremaHidratante.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="287.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/serumAntiarrugas.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="505.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/labialMate.jpg" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="cremaRB" layoutX="54.0" layoutY="200.0" mnemonicParsing="false" text="Crema hidratante">
+         <toggleGroup>
+            <ToggleGroup fx:id="productos" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="serumRB" layoutX="274.0" layoutY="200.0" mnemonicParsing="false" text="Sérum antiarrugas" toggleGroup="$productos" />
+      <RadioButton fx:id="labialRB" layoutX="518.0" layoutY="200.0" mnemonicParsing="false" text="Labial mate" toggleGroup="$productos" />
+      <Button fx:id="botonComprar" layoutX="394.0" layoutY="390.0" mnemonicParsing="false" onAction="#onComprarClick" text="Comprar" />
+      <Label layoutX="107.0" layoutY="296.0" text="Seleccione la cantidad que desea comprar" />
+      <ComboBox fx:id="cantidadCB" layoutX="451.0" layoutY="290.0" prefHeight="39.0" prefWidth="94.0" />
+      <Button fx:id="botonAtras" layoutX="240.0" layoutY="390.0" mnemonicParsing="false" onAction="#onAtrasClick" prefHeight="39.0" prefWidth="94.0" text="Atrás" />
+   </children>
+</AnchorPane>
