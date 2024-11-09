@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ad_entrega1_periodicoonline_javafx.Controller.ClientesController">
+  <children>
+    <Pane layoutX="20.0" layoutY="23.0" prefHeight="492.0" prefWidth="799.0" style="-fx-border-color: #7f90e8; -fx-border-radius: 2; -fx-border-width: 2;" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="23.0">
+      <children>
+        <Label layoutX="37.0" layoutY="-17.0" style="-fx-background-color: #f0f0f0;" text="USUARIO" textAlignment="JUSTIFY" textFill="#13834f">
+          <font>
+            <Font name="System Bold" size="24.0" />
+          </font>
+        </Label>
+        <Pane layoutX="37.0" layoutY="295.0" prefHeight="161.0" prefWidth="334.0" style="-fx-border-color: #7f90e8; -fx-border-radius: 2; -fx-border-width: 2;">
+          <children>
+            <Label layoutX="21.0" layoutY="-17.0" style="-fx-background-color: #f0f0f0;" text="CLIENTE PREMIUM" textAlignment="JUSTIFY" textFill="#13834f">
+              <font>
+                <Font name="System Bold" size="24.0" />
+              </font>
+            </Label>
+            <RadioButton layoutX="99.0" layoutY="36.0" mnemonicParsing="false" text="SI">
+              <toggleGroup>
+                <ToggleGroup fx:id="clientePremium" />
+              </toggleGroup></RadioButton>
+            <RadioButton layoutX="98.0" layoutY="89.0" mnemonicParsing="false" selected="true" text="NO" toggleGroup="$clientePremium" />
+          </children>
+        </Pane>
+        <Label layoutX="56.0" layoutY="75.0" text="USUARIO" />
+        <Label layoutX="56.0" layoutY="147.0" text="CONTRASEÑA" />
+        <Label layoutX="56.0" layoutY="214.0" text="DESCUENTO" />
+        <TextField fx:id="usuarioCorreoTF" layoutX="214.0" layoutY="69.0" />
+        <TextField fx:id="contrasenaTF" layoutX="214.0" layoutY="141.0" />
+        <TextField fx:id="descuentoTF" layoutX="214.0" layoutY="208.0" />
+        <Button layoutX="573.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAnadirCliente" prefHeight="59.0" prefWidth="157.0" text="AÑADIR" />
+        <Button layoutX="573.0" layoutY="241.0" mnemonicParsing="false" onAction="#onIngresosTotales" prefHeight="59.0" prefWidth="157.0" text="INGRESOS" />
+        <Button layoutX="573.0" layoutY="145.0" mnemonicParsing="false" onAction="#onBuscarCliente" prefHeight="59.0" prefWidth="157.0" text="BUSCAR" />
+        <Button layoutX="573.0" layoutY="346.0" mnemonicParsing="false" onAction="#onSalir" prefHeight="59.0" prefWidth="157.0" text="SALIR" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
