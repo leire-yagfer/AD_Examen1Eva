@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoradiobutton.RadioButtonController">
+  <children>
+    <VBox layoutX="20.0" layoutY="20.0" prefHeight="-1.0" prefWidth="-1.0" spacing="50.0">
+      <children>
+        <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+          <children>
+            <Label text="Ejemplo RadioButton" />
+            <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+                  <children>
+                    <RadioButton fx:id="rdb01" mnemonicParsing="false" onAction="#rdbOnAction" text="Microsoft">
+                      <toggleGroup>
+                        <ToggleGroup fx:id="rdbgroup" />
+                      </toggleGroup>
+                    </RadioButton>
+                    <RadioButton fx:id="rdb02" mnemonicParsing="false" onAction="#rdbOnAction" text="Apple" toggleGroup="$rdbgroup" />
+                  </children>
+                </VBox>
+                <TextField fx:id="txf01" editable="false" prefWidth="130.0" style="-fx-background-color: beige;" />
+                <TextField fx:id="txf02" editable="false" prefWidth="130.0" style="-fx-background-color: beige;" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
