@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clientesempresarepasogeneral.Controller.verTransaccionesController">
+   <children>
+      <TableView fx:id="TablaID" layoutX="23.0" layoutY="77.0" onMouseClicked="#seleccionarFila" prefHeight="281.0" prefWidth="502.0">
+        <columns>
+          <TableColumn fx:id="idIdTabla" prefWidth="54.0" text="Id" />
+          <TableColumn fx:id="precioTablaID" prefWidth="96.0000228881836" text="Precio" />
+            <TableColumn fx:id="tipoTablaId" prefWidth="117.33329772949219" text="Tipo" />
+            <TableColumn fx:id="fechaTablaId" prefWidth="122.66668701171875" text="Fecha" />
+            <TableColumn fx:id="nombreUsuarioID" prefWidth="109.33334350585938" text="Nombre" />
+        </columns>
+      </TableView>
+      <Text layoutX="123.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VER TRANSACCIONES">
+         <font>
+            <Font name="Centaur" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idId" editable="false" layoutX="633.0" layoutY="56.0" />
+      <Text layoutX="560.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
+      <Text layoutX="549.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" />
+      <TextField fx:id="precioId" layoutX="633.0" layoutY="88.0" />
+      <ComboBox fx:id="tipoId" layoutX="633.0" layoutY="121.0" prefWidth="150.0" />
+      <Text layoutX="553.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo" />
+      <DatePicker fx:id="fechaId" layoutX="634.0" layoutY="155.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="550.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha" />
+      <Button fx:id="agregarTransaccionButton" layoutX="608.0" layoutY="205.0" mnemonicParsing="false" onAction="#onAgregarButtonClick" text="Agregar" />
+      <Button fx:id="eliminarTransaccionButton" layoutX="608.0" layoutY="248.0" mnemonicParsing="false" onAction="#onEliminarButtonClick" text="Eliminar" />
+      <Button fx:id="volverTransaccionButton" layoutX="611.0" layoutY="292.0" mnemonicParsing="false" onAction="#onVolverButtonClick" text="Volver" />
+   </children>
+</Pane>

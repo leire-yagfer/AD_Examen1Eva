@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clientesempresarepasogeneral.Controller.PaginaPrincipalController">
+   <children>
+      <Text fill="#0c20fb" layoutX="79.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPRESA">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="agregarClienteBoton" layoutX="30.0" layoutY="276.0" mnemonicParsing="false" onAction="#onAgregarClienteClick" text="Agregar Cliente" />
+      <Button fx:id="modificarClienteButton" layoutX="177.0" layoutY="276.0" mnemonicParsing="false" onAction="#onModificarClienteClick" text="Modificar Cliente" />
+      <Button fx:id="eliminarClienteButton" layoutX="30.0" layoutY="328.0" mnemonicParsing="false" onAction="#onEliminarClienteClick" text="Eliminar Cliente" />
+      <Button fx:id="verTransaccionesButton" layoutX="175.0" layoutY="328.0" mnemonicParsing="false" onAction="#onVerTransaccionesClick" text="Ver transacciones" />
+      <TableView fx:id="TablaId" layoutX="344.0" layoutY="36.0" onMouseClicked="#seleccionarFila" prefHeight="341.0" prefWidth="404.0">
+        <columns>
+            <TableColumn fx:id="idTablaId" prefWidth="44.0" text="Id" />
+            <TableColumn fx:id="nombreTablaId" prefWidth="106.66668701171875" text="Nombre" />
+            <TableColumn fx:id="apellidosTablaId" prefWidth="89.0" text="Apellidos" />
+          <TableColumn fx:id="emailTablaId" prefWidth="76.0" text="Email" />
+            <TableColumn fx:id="telefonoTablaId" prefWidth="87.0" text="Telefono" />
+        </columns>
+      </TableView>
+      <Text layoutX="25.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <Text layoutX="22.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" />
+      <Text layoutX="32.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="23.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono" />
+      <TextField fx:id="nombreId" layoutX="96.0" layoutY="107.0" />
+      <TextField fx:id="apellidosId" layoutX="96.0" layoutY="144.0" />
+      <TextField fx:id="emailId" layoutX="96.0" layoutY="182.0" />
+      <TextField fx:id="telefonoId" layoutX="96.0" layoutY="217.0" />
+      <Text layoutX="41.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
+      <TextField fx:id="idId" editable="false" layoutX="96.0" layoutY="71.0" />
+   </children>
+</Pane>
